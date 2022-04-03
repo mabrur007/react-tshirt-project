@@ -1,9 +1,15 @@
 import React from 'react';
+import './Header.css';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
         <div>
-            <h2>Welcome to T-shirt Mania.</h2>
+            <h1>Welcome to T-shirt Mania.</h1>
+            <nav>
+                <Link to='/home'>Home</Link>
+                <Link to='/orderreview'>Order Review</Link>
+            </nav>
         </div>
     );
 };
