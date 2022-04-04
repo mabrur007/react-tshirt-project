@@ -6,6 +6,8 @@ import './Grandpa.css';
 
 const Grandpa = () => {
   const [house, setHouse] = useState(1);
+
+  const ornament = 'Diamond Ring';
   
   const buyHouseCount = () => {
     const newHOuse = house + 1;
@@ -18,7 +20,7 @@ const Grandpa = () => {
         <button onClick={buyHouseCount}>Buy House</button>
         <p>House: { house}</p>
         <section style={{ display: "flex" }}>
-          <Father house={house}></Father>
+          <Father house={house} ornament={ornament}></Father>
           <Uncle house={house}></Uncle>
           <Aunty house={house}></Aunty>
         </section>
